@@ -1,0 +1,20 @@
+npm install --save react react-dom immutable react-addons-pure-render-mixin classnames redux react-redux react-router
+
+npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react react-hot-loader mocha chai chai-immutable jsdom style-loader css-loader react-addons-test-utils
+
+
+In order to help up test our components, the React library provides the TestUtils addons that provide, among others, the following methods:
+- renderIntoDocument, that renders a component into a detached DOM node;
+- scryRenderedDOMComponentsWithTag, that finds all instances of components in the DOM with the provided tag (like li, input…);
+- scryRenderedDOMComponentsWithClass, that finds all instances of components in the DOM with the provided class;
+- Simulate, that simulates user actions (a click, a key press, text inputs…)
+
+The TestUtils addon is not included in the react package, so we have to install it separately
+npm install --save-dev react-addons-test-utils
+
+http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-2/
+
+Redux
+-The Reducer is the one that actually contains the logic of the action
+-The Action is the constants list of what actions are available
+--> Action Creators let the app know which of these constants are available`
